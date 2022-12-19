@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     private var isPlaying = false
     private let startTrack = Track.trackArray().first
     @IBOutlet private weak var playButton: UIButton!
-    
     @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
