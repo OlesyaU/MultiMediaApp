@@ -6,10 +6,10 @@
 //
 
 import Foundation
+
 struct Track {
     let name: String
     let format = "mp3"
-    
     
     static func trackArray() -> [Track] {
         var array = [Track]()
