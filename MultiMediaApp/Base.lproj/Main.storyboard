@@ -93,7 +93,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hRH-iq-ADD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="hRH-iq-ADD" firstAttribute="bottom" secondItem="WQg-ZS-7fE" secondAttribute="bottom" constant="150" id="7Sc-Jm-xUc"/>
                             <constraint firstItem="zer-KX-shz" firstAttribute="top" secondItem="hRH-iq-ADD" secondAttribute="top" constant="150" id="8OX-1S-N5j"/>
@@ -152,6 +152,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
