@@ -94,6 +94,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hRH-iq-ADD"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="hRH-iq-ADD" firstAttribute="bottom" secondItem="WQg-ZS-7fE" secondAttribute="bottom" constant="150" id="7Sc-Jm-xUc"/>
                             <constraint firstItem="zer-KX-shz" firstAttribute="top" secondItem="hRH-iq-ADD" secondAttribute="top" constant="150" id="8OX-1S-N5j"/>
