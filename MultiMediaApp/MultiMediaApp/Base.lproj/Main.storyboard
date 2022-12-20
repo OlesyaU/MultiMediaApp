@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Smt-RM-6Zu">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video-->
+        <scene sceneID="sSF-nu-xAY">
+            <objects>
+                <viewController id="4co-Hq-zLj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a21-lc-los">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1p0-AX-8Fj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Video" image="video" catalog="system" id="t6X-Km-3Bx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w3S-qQ-JVe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433" y="361"/>
+        </scene>
+        <!--Music-->
+        <scene sceneID="X1i-Iy-bwf">
+            <objects>
+                <viewController id="fM3-U9-BsR" customClass="ViewController" customModule="MultiMediaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Hd-VG-ojt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zer-KX-shz">
+                                <rect key="frame" x="16" y="209" width="361" height="334"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIW-8Z-hEH">
+                                <rect key="frame" x="100" y="559" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IL6-7a-aXD"/>
+                                    <constraint firstAttribute="width" constant="60" id="btI-oI-iAn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" image="play.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="playButton:" destination="fM3-U9-BsR" eventType="touchUpInside" id="NbD-Yf-1ip"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQg-ZS-7fE" userLabel="StopButton">
+                                <rect key="frame" x="233" y="559" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="1lI-Gb-AZa"/>
+                                    <constraint firstAttribute="height" constant="60" id="sDr-Nd-4gl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" image="stop.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="stopButton:" destination="fM3-U9-BsR" eventType="touchUpInside" id="28M-HJ-K73"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axv-DP-ylw" userLabel="BackButton">
+                                <rect key="frame" x="100" y="635" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RF1-ZV-5gr"/>
+                                    <constraint firstAttribute="width" constant="60" id="SRK-Qd-jNq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" image="backward.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="fM3-U9-BsR" eventType="touchUpInside" id="pRQ-vI-tL0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjv-Xz-8SL" userLabel="ForwardButton">
+                                <rect key="frame" x="233" y="635" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="64F-m0-biV"/>
+                                    <constraint firstAttribute="height" constant="60" id="zx0-8X-gVe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" image="forward.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="forwardButtonAction:" destination="fM3-U9-BsR" eventType="touchUpInside" id="0dS-UG-t7G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hRH-iq-ADD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hRH-iq-ADD" firstAttribute="bottom" secondItem="WQg-ZS-7fE" secondAttribute="bottom" constant="150" id="7Sc-Jm-xUc"/>
+                            <constraint firstItem="zer-KX-shz" firstAttribute="top" secondItem="hRH-iq-ADD" secondAttribute="top" constant="150" id="8OX-1S-N5j"/>
+                            <constraint firstItem="WQg-ZS-7fE" firstAttribute="centerY" secondItem="PIW-8Z-hEH" secondAttribute="centerY" id="C3Z-PX-pq4"/>
+                            <constraint firstItem="zer-KX-shz" firstAttribute="leading" secondItem="hRH-iq-ADD" secondAttribute="leading" constant="16" id="K7a-b6-sET"/>
+                            <constraint firstItem="hRH-iq-ADD" firstAttribute="trailing" secondItem="WQg-ZS-7fE" secondAttribute="trailing" constant="100" id="Nde-o3-s53"/>
+                            <constraint firstItem="hRH-iq-ADD" firstAttribute="bottom" secondItem="PIW-8Z-hEH" secondAttribute="bottom" constant="150" id="ODE-N0-yHe"/>
+                            <constraint firstItem="hRH-iq-ADD" firstAttribute="trailing" secondItem="zer-KX-shz" secondAttribute="trailing" constant="16" id="SHj-XY-pMk"/>
+                            <constraint firstItem="axv-DP-ylw" firstAttribute="top" secondItem="PIW-8Z-hEH" secondAttribute="bottom" constant="16" id="auL-BV-8hL"/>
+                            <constraint firstItem="rjv-Xz-8SL" firstAttribute="centerY" secondItem="axv-DP-ylw" secondAttribute="centerY" id="boL-D8-zrr"/>
+                            <constraint firstItem="PIW-8Z-hEH" firstAttribute="top" secondItem="zer-KX-shz" secondAttribute="bottom" constant="16" id="ezW-ap-jP2"/>
+                            <constraint firstItem="hRH-iq-ADD" firstAttribute="trailing" secondItem="rjv-Xz-8SL" secondAttribute="trailing" constant="100" id="f21-x9-Qvz"/>
+                            <constraint firstItem="axv-DP-ylw" firstAttribute="leading" secondItem="hRH-iq-ADD" secondAttribute="leading" constant="100" id="lZc-33-QhR"/>
+                            <constraint firstItem="PIW-8Z-hEH" firstAttribute="leading" secondItem="hRH-iq-ADD" secondAttribute="leading" constant="100" id="r6E-ID-zXD"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Music" image="music.quarternote.3" catalog="system" id="Hdy-r2-03y"/>
+                    <connections>
+                        <outlet property="label" destination="zer-KX-shz" id="aXn-se-nx0"/>
+                        <outlet property="playButton" destination="PIW-8Z-hEH" id="Xbb-Gw-zWX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8NE-GO-DCB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433" y="-374"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ufR-S0-GRl">
+            <objects>
+                <tabBarController id="Smt-RM-6Zu" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qm9-5R-eif">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" cyan="0.39310843540000001" magenta="0.90577121959999995" yellow="0.85231372110000003" black="0.7723594131" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fM3-U9-BsR" kind="relationship" relationship="viewControllers" id="Een-Lw-SBh"/>
+                        <segue destination="4co-Hq-zLj" kind="relationship" relationship="viewControllers" id="EDr-9x-cKu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9c-aK-AdH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-472" y="-70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backward.fill" catalog="system" width="128" height="77"/>
+        <image name="forward.fill" catalog="system" width="128" height="77"/>
+        <image name="music.quarternote.3" catalog="system" width="128" height="102"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
+        <image name="stop.fill" catalog="system" width="128" height="113"/>
+        <image name="video" catalog="system" width="128" height="82"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
