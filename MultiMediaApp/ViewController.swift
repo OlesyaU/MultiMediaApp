@@ -76,8 +76,7 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    @IBAction func forwardButtonAction(_ sender: Any) {
+   @IBAction func forwardButtonAction(_ sender: Any) {
         view.backgroundColor = .systemIndigo
         stopButton(self)
         let indexNow = tracks.firstIndex(where: {$0.name == label.text})
@@ -88,8 +87,6 @@ class ViewController: UIViewController {
             useTrack(track: tracks[forwardTrackIndex])
         }
     }
-    
-    
 }
 
 
