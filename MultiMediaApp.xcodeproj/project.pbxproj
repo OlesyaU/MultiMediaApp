@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7679114E2952444D00B44E14 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7679114D2952444D00B44E14 /* VideoViewController.swift */; };
+		7679115A2952E1CA00B44E14 /* клип1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 767911592952E1CA00B44E14 /* клип1.mp4 */; };
+		7679115C2952E32200B44E14 /* клип2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7679115B2952E32200B44E14 /* клип2.mp4 */; };
+		7679115E2952E34600B44E14 /* клип3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7679115D2952E34600B44E14 /* клип3.mp4 */; };
+		767911602952E43A00B44E14 /* клип4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7679115F2952E43A00B44E14 /* клип4.mp4 */; };
+		767911622952E51700B44E14 /* клип5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 767911612952E51700B44E14 /* клип5.mp4 */; };
+		767911652952E69000B44E14 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767911642952E69000B44E14 /* Movie.swift */; };
 		76C635A9294D848E0062B519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C635A8294D848E0062B519 /* AppDelegate.swift */; };
 		76C635AB294D848E0062B519 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C635AA294D848E0062B519 /* SceneDelegate.swift */; };
 		76C635AD294D848E0062B519 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C635AC294D848E0062B519 /* ViewController.swift */; };
@@ -23,6 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7679114D2952444D00B44E14 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		7679115129529C4700B44E14 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		767911592952E1CA00B44E14 /* клип1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип1.mp4"; sourceTree = "<group>"; };
+		7679115B2952E32200B44E14 /* клип2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип2.mp4"; sourceTree = "<group>"; };
+		7679115D2952E34600B44E14 /* клип3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип3.mp4"; sourceTree = "<group>"; };
+		7679115F2952E43A00B44E14 /* клип4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип4.mp4"; sourceTree = "<group>"; };
+		767911612952E51700B44E14 /* клип5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип5.mp4"; sourceTree = "<group>"; };
+		767911642952E69000B44E14 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		76C635A5294D848E0062B519 /* MultiMediaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiMediaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C635A8294D848E0062B519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76C635AA294D848E0062B519 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,11 +66,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7679114C295241DB00B44E14 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				767911592952E1CA00B44E14 /* клип1.mp4 */,
+				7679115B2952E32200B44E14 /* клип2.mp4 */,
+				7679115D2952E34600B44E14 /* клип3.mp4 */,
+				7679115F2952E43A00B44E14 /* клип4.mp4 */,
+				767911612952E51700B44E14 /* клип5.mp4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		7679115029529C4700B44E14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7679115129529C4700B44E14 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		767911632952E60400B44E14 /* VideoFile */ = {
+			isa = PBXGroup;
+			children = (
+				767911642952E69000B44E14 /* Movie.swift */,
+				7679114D2952444D00B44E14 /* VideoViewController.swift */,
+			);
+			path = VideoFile;
+			sourceTree = "<group>";
+		};
 		76C6359C294D848E0062B519 = {
 			isa = PBXGroup;
 			children = (
 				76C635A7294D848E0062B519 /* MultiMediaApp */,
 				76C635A6294D848E0062B519 /* Products */,
+				7679115029529C4700B44E14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,11 +115,12 @@
 		76C635A7294D848E0062B519 /* MultiMediaApp */ = {
 			isa = PBXGroup;
 			children = (
+				767911632952E60400B44E14 /* VideoFile */,
 				76C635C9294D961C0062B519 /* AudioFile */,
+				7679114C295241DB00B44E14 /* Video */,
 				76C635BC294D856B0062B519 /* Music */,
 				76C635A8294D848E0062B519 /* AppDelegate.swift */,
 				76C635AA294D848E0062B519 /* SceneDelegate.swift */,
-				76C635AC294D848E0062B519 /* ViewController.swift */,
 				76C635AE294D848E0062B519 /* Main.storyboard */,
 				76C635B1294D84900062B519 /* Assets.xcassets */,
 				76C635B3294D84900062B519 /* LaunchScreen.storyboard */,
@@ -100,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				76C635CC294D96650062B519 /* Track.swift */,
+				76C635AC294D848E0062B519 /* ViewController.swift */,
 			);
 			path = AudioFile;
 			sourceTree = "<group>";
@@ -162,13 +209,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7679115A2952E1CA00B44E14 /* клип1.mp4 in Resources */,
 				76C635BE294D85B50062B519 /* Experience.mp3 in Resources */,
 				76C635C6294D85D00062B519 /* Night.mp3 in Resources */,
+				7679115E2952E34600B44E14 /* клип3.mp4 in Resources */,
 				76C635B5294D84900062B519 /* LaunchScreen.storyboard in Resources */,
 				76C635C8294D85D50062B519 /* FLY.mp3 in Resources */,
 				76C635C4294D85CA0062B519 /* Walk.mp3 in Resources */,
+				7679115C2952E32200B44E14 /* клип2.mp4 in Resources */,
 				76C635C2294D85C50062B519 /* Primavera.mp3 in Resources */,
 				76C635C0294D85BE0062B519 /* Roc.mp3 in Resources */,
+				767911602952E43A00B44E14 /* клип4.mp4 in Resources */,
+				767911622952E51700B44E14 /* клип5.mp4 in Resources */,
 				76C635B2294D84900062B519 /* Assets.xcassets in Resources */,
 				76C635B0294D848E0062B519 /* Main.storyboard in Resources */,
 			);
@@ -183,7 +235,9 @@
 			files = (
 				76C635AD294D848E0062B519 /* ViewController.swift in Sources */,
 				76C635A9294D848E0062B519 /* AppDelegate.swift in Sources */,
+				767911652952E69000B44E14 /* Movie.swift in Sources */,
 				76C635AB294D848E0062B519 /* SceneDelegate.swift in Sources */,
+				7679114E2952444D00B44E14 /* VideoViewController.swift in Sources */,
 				76C635CD294D96650062B519 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +391,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -366,6 +421,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

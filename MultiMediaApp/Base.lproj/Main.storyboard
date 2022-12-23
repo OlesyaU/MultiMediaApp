@@ -12,18 +12,60 @@
         <!--Video-->
         <scene sceneID="sSF-nu-xAY">
             <objects>
-                <viewController id="4co-Hq-zLj" sceneMemberID="viewController">
+                <viewController id="4co-Hq-zLj" customClass="VideoViewController" customModule="MultiMediaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a21-lc-los">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ww4-Ik-1tv">
+                                <rect key="frame" x="0.0" y="67" width="393" height="300"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="4bd-Wn-1wp"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SIu-ef-dHu">
+                                <rect key="frame" x="0.0" y="375" width="393" height="394"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" cyan="0.39310843540000001" magenta="0.90577121959999995" yellow="0.85231372110000003" black="0.7723594131" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Vr6-gU-pYu">
+                                        <rect key="frame" x="0.0" y="55.333332061767578" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vr6-gU-pYu" id="kkJ-64-h9F" customClass="VideoTableViewCell" customModule="MultiMediaApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1p0-AX-8Fj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="SIu-ef-dHu" firstAttribute="leading" secondItem="1p0-AX-8Fj" secondAttribute="leading" id="Bah-Fd-69L"/>
+                            <constraint firstItem="Ww4-Ik-1tv" firstAttribute="top" secondItem="1p0-AX-8Fj" secondAttribute="top" constant="8" id="Fza-xM-eXt"/>
+                            <constraint firstItem="1p0-AX-8Fj" firstAttribute="trailing" secondItem="SIu-ef-dHu" secondAttribute="trailing" id="KVj-av-gHi"/>
+                            <constraint firstItem="SIu-ef-dHu" firstAttribute="top" secondItem="Ww4-Ik-1tv" secondAttribute="bottom" constant="8" id="WoR-f3-Kan"/>
+                            <constraint firstItem="1p0-AX-8Fj" firstAttribute="trailing" secondItem="Ww4-Ik-1tv" secondAttribute="trailing" id="cWf-Sq-Ysq"/>
+                            <constraint firstItem="1p0-AX-8Fj" firstAttribute="bottom" secondItem="SIu-ef-dHu" secondAttribute="bottom" id="mE3-FX-eFd"/>
+                            <constraint firstItem="Ww4-Ik-1tv" firstAttribute="leading" secondItem="1p0-AX-8Fj" secondAttribute="leading" id="p2Y-hF-CVg"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Video" image="video" catalog="system" id="t6X-Km-3Bx"/>
+                    <connections>
+                        <outlet property="tableView" destination="SIu-ef-dHu" id="NWf-sw-LuC"/>
+                        <outlet property="webView" destination="Ww4-Ik-1tv" id="OqE-Z3-Cpz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3S-qQ-JVe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="433" y="361"/>
+            <point key="canvasLocation" x="432.82442748091603" y="360.56338028169017"/>
         </scene>
         <!--Music-->
         <scene sceneID="X1i-Iy-bwf">
@@ -151,8 +193,8 @@
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
