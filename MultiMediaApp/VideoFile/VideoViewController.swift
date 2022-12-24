@@ -85,20 +85,7 @@ extension VideoViewController: UITableViewDataSource {
         cell.contentConfiguration = content
         return cell
     }
-//    private func nameOfVideoYoutube() -> [Movie] {
-////        let arr = [Movie]()
-//        for  var i in streamMovieArray.enumerated() {
-//            i.element.name = "\(i.offset)"
-//            print(i.element.name)
-//
-//        }
-//        streamMovieArray.forEach { i in
-//            i.name = 1.description
-//            print(i.name)
-//        }
-//        return streamMovieArray
-//    }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
