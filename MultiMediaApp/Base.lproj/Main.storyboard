@@ -76,7 +76,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zer-KX-shz">
-                                <rect key="frame" x="16" y="209" width="361" height="334"/>
+                                <rect key="frame" x="16" y="443" width="361" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="jQZ-Ew-5AA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -133,24 +136,65 @@
                                     <action selector="forwardButtonAction:" destination="fM3-U9-BsR" eventType="touchUpInside" id="0dS-UG-t7G"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ql8-aB-ruJ">
+                                <rect key="frame" x="213" y="303" width="80" height="40"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="CSl-Oq-hcJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="L2D-2z-ki0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play " titleAlignment="center"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playRecordButtonAction:" destination="fM3-U9-BsR" eventType="touchUpInside" id="saq-9M-3sp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9F7-Y6-ywc">
+                                <rect key="frame" x="100" y="303" width="80" height="40"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8bV-6J-3F7"/>
+                                    <constraint firstAttribute="width" constant="80" id="gOe-An-HEs"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Record" titleAlignment="center"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="recordButtonAction:" destination="fM3-U9-BsR" eventType="touchUpInside" id="TGV-uH-umu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hRH-iq-ADD"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="hRH-iq-ADD" firstAttribute="bottom" secondItem="WQg-ZS-7fE" secondAttribute="bottom" constant="150" id="7Sc-Jm-xUc"/>
-                            <constraint firstItem="zer-KX-shz" firstAttribute="top" secondItem="hRH-iq-ADD" secondAttribute="top" constant="150" id="8OX-1S-N5j"/>
                             <constraint firstItem="WQg-ZS-7fE" firstAttribute="centerY" secondItem="PIW-8Z-hEH" secondAttribute="centerY" id="C3Z-PX-pq4"/>
                             <constraint firstItem="zer-KX-shz" firstAttribute="leading" secondItem="hRH-iq-ADD" secondAttribute="leading" constant="16" id="K7a-b6-sET"/>
                             <constraint firstItem="hRH-iq-ADD" firstAttribute="trailing" secondItem="WQg-ZS-7fE" secondAttribute="trailing" constant="100" id="Nde-o3-s53"/>
                             <constraint firstItem="hRH-iq-ADD" firstAttribute="bottom" secondItem="PIW-8Z-hEH" secondAttribute="bottom" constant="150" id="ODE-N0-yHe"/>
                             <constraint firstItem="hRH-iq-ADD" firstAttribute="trailing" secondItem="zer-KX-shz" secondAttribute="trailing" constant="16" id="SHj-XY-pMk"/>
+                            <constraint firstItem="ql8-aB-ruJ" firstAttribute="top" relation="lessThanOrEqual" secondItem="hRH-iq-ADD" secondAttribute="top" constant="244" id="ZyW-yY-axV"/>
                             <constraint firstItem="axv-DP-ylw" firstAttribute="top" secondItem="PIW-8Z-hEH" secondAttribute="bottom" constant="16" id="auL-BV-8hL"/>
                             <constraint firstItem="rjv-Xz-8SL" firstAttribute="centerY" secondItem="axv-DP-ylw" secondAttribute="centerY" id="boL-D8-zrr"/>
                             <constraint firstItem="PIW-8Z-hEH" firstAttribute="top" secondItem="zer-KX-shz" secondAttribute="bottom" constant="16" id="ezW-ap-jP2"/>
                             <constraint firstItem="hRH-iq-ADD" firstAttribute="trailing" secondItem="rjv-Xz-8SL" secondAttribute="trailing" constant="100" id="f21-x9-Qvz"/>
+                            <constraint firstItem="hRH-iq-ADD" firstAttribute="trailing" secondItem="ql8-aB-ruJ" secondAttribute="trailing" constant="100" id="kDC-Ux-xVo"/>
+                            <constraint firstItem="ql8-aB-ruJ" firstAttribute="centerY" secondItem="9F7-Y6-ywc" secondAttribute="centerY" id="kvZ-aU-s1Y"/>
                             <constraint firstItem="axv-DP-ylw" firstAttribute="leading" secondItem="hRH-iq-ADD" secondAttribute="leading" constant="100" id="lZc-33-QhR"/>
+                            <constraint firstItem="9F7-Y6-ywc" firstAttribute="leading" secondItem="hRH-iq-ADD" secondAttribute="leading" constant="100" id="qBk-AZ-w9V"/>
                             <constraint firstItem="PIW-8Z-hEH" firstAttribute="leading" secondItem="hRH-iq-ADD" secondAttribute="leading" constant="100" id="r6E-ID-zXD"/>
+                            <constraint firstItem="9F7-Y6-ywc" firstAttribute="top" relation="lessThanOrEqual" secondItem="hRH-iq-ADD" secondAttribute="top" constant="244" id="ygp-JT-brN"/>
+                            <constraint firstItem="zer-KX-shz" firstAttribute="top" relation="lessThanOrEqual" secondItem="9F7-Y6-ywc" secondAttribute="bottom" constant="100" id="zs3-jE-qwl"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Music" image="music.quarternote.3" catalog="system" id="Hdy-r2-03y"/>
@@ -198,6 +242,12 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
