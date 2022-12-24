@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7679114E2952444D00B44E14 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7679114D2952444D00B44E14 /* VideoViewController.swift */; };
-		7679115A2952E1CA00B44E14 /* клип1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 767911592952E1CA00B44E14 /* клип1.mp4 */; };
-		7679115C2952E32200B44E14 /* клип2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7679115B2952E32200B44E14 /* клип2.mp4 */; };
-		7679115E2952E34600B44E14 /* клип3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7679115D2952E34600B44E14 /* клип3.mp4 */; };
-		767911602952E43A00B44E14 /* клип4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7679115F2952E43A00B44E14 /* клип4.mp4 */; };
-		767911622952E51700B44E14 /* клип5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 767911612952E51700B44E14 /* клип5.mp4 */; };
+		7679115A2952E1CA00B44E14 /* клип1 из библиотеки.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 767911592952E1CA00B44E14 /* клип1 из библиотеки.mp4 */; };
+		7679115C2952E32200B44E14 /* клип2 из библиотеки.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7679115B2952E32200B44E14 /* клип2 из библиотеки.mp4 */; };
+		7679115E2952E34600B44E14 /* клип3 из библиотеки.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7679115D2952E34600B44E14 /* клип3 из библиотеки.mp4 */; };
+		767911602952E43A00B44E14 /* клип4 из библиотеки.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7679115F2952E43A00B44E14 /* клип4 из библиотеки.mp4 */; };
+		767911622952E51700B44E14 /* клип5 из библиотеки.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 767911612952E51700B44E14 /* клип5 из библиотеки.mp4 */; };
 		767911652952E69000B44E14 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767911642952E69000B44E14 /* Movie.swift */; };
 		76C635A9294D848E0062B519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C635A8294D848E0062B519 /* AppDelegate.swift */; };
 		76C635AB294D848E0062B519 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C635AA294D848E0062B519 /* SceneDelegate.swift */; };
@@ -32,11 +32,11 @@
 /* Begin PBXFileReference section */
 		7679114D2952444D00B44E14 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		7679115129529C4700B44E14 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		767911592952E1CA00B44E14 /* клип1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип1.mp4"; sourceTree = "<group>"; };
-		7679115B2952E32200B44E14 /* клип2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип2.mp4"; sourceTree = "<group>"; };
-		7679115D2952E34600B44E14 /* клип3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип3.mp4"; sourceTree = "<group>"; };
-		7679115F2952E43A00B44E14 /* клип4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип4.mp4"; sourceTree = "<group>"; };
-		767911612952E51700B44E14 /* клип5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип5.mp4"; sourceTree = "<group>"; };
+		767911592952E1CA00B44E14 /* клип1 из библиотеки.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип1 из библиотеки.mp4"; sourceTree = "<group>"; };
+		7679115B2952E32200B44E14 /* клип2 из библиотеки.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип2 из библиотеки.mp4"; sourceTree = "<group>"; };
+		7679115D2952E34600B44E14 /* клип3 из библиотеки.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип3 из библиотеки.mp4"; sourceTree = "<group>"; };
+		7679115F2952E43A00B44E14 /* клип4 из библиотеки.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип4 из библиотеки.mp4"; sourceTree = "<group>"; };
+		767911612952E51700B44E14 /* клип5 из библиотеки.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "клип5 из библиотеки.mp4"; sourceTree = "<group>"; };
 		767911642952E69000B44E14 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		76C635A5294D848E0062B519 /* MultiMediaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiMediaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C635A8294D848E0062B519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,11 +69,11 @@
 		7679114C295241DB00B44E14 /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				767911592952E1CA00B44E14 /* клип1.mp4 */,
-				7679115B2952E32200B44E14 /* клип2.mp4 */,
-				7679115D2952E34600B44E14 /* клип3.mp4 */,
-				7679115F2952E43A00B44E14 /* клип4.mp4 */,
-				767911612952E51700B44E14 /* клип5.mp4 */,
+				767911592952E1CA00B44E14 /* клип1 из библиотеки.mp4 */,
+				7679115B2952E32200B44E14 /* клип2 из библиотеки.mp4 */,
+				7679115D2952E34600B44E14 /* клип3 из библиотеки.mp4 */,
+				7679115F2952E43A00B44E14 /* клип4 из библиотеки.mp4 */,
+				767911612952E51700B44E14 /* клип5 из библиотеки.mp4 */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -209,18 +209,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7679115A2952E1CA00B44E14 /* клип1.mp4 in Resources */,
+				7679115A2952E1CA00B44E14 /* клип1 из библиотеки.mp4 in Resources */,
 				76C635BE294D85B50062B519 /* Experience.mp3 in Resources */,
 				76C635C6294D85D00062B519 /* Night.mp3 in Resources */,
-				7679115E2952E34600B44E14 /* клип3.mp4 in Resources */,
+				7679115E2952E34600B44E14 /* клип3 из библиотеки.mp4 in Resources */,
 				76C635B5294D84900062B519 /* LaunchScreen.storyboard in Resources */,
 				76C635C8294D85D50062B519 /* FLY.mp3 in Resources */,
 				76C635C4294D85CA0062B519 /* Walk.mp3 in Resources */,
-				7679115C2952E32200B44E14 /* клип2.mp4 in Resources */,
+				7679115C2952E32200B44E14 /* клип2 из библиотеки.mp4 in Resources */,
 				76C635C2294D85C50062B519 /* Primavera.mp3 in Resources */,
 				76C635C0294D85BE0062B519 /* Roc.mp3 in Resources */,
-				767911602952E43A00B44E14 /* клип4.mp4 in Resources */,
-				767911622952E51700B44E14 /* клип5.mp4 in Resources */,
+				767911602952E43A00B44E14 /* клип4 из библиотеки.mp4 in Resources */,
+				767911622952E51700B44E14 /* клип5 из библиотеки.mp4 in Resources */,
 				76C635B2294D84900062B519 /* Assets.xcassets in Resources */,
 				76C635B0294D848E0062B519 /* Main.storyboard in Resources */,
 			);

@@ -13,11 +13,11 @@ struct Movie {
     
     static func movieArray() -> [Movie] {
         var array = [Movie]()
-        array.append(Movie(name: "клип1"))
-        array.append(Movie(name: "клип2"))
-        array.append(Movie(name: "клип3"))
-        array.append(Movie(name: "клип4"))
-        array.append(Movie(name: "клип5"))
+        array.append(Movie(name: "клип1 из библиотеки"))
+        array.append(Movie(name: "клип2 из библиотеки"))
+        array.append(Movie(name: "клип3 из библиотеки"))
+        array.append(Movie(name: "клип4 из библиотеки"))
+        array.append(Movie(name: "клип5 из библиотеки"))
         return array
     }
     
@@ -29,5 +29,14 @@ struct Movie {
         array.append(Movie(name: "7kFAAvtOTi8"))
         array.append(Movie(name: "USK1VjV-nO8"))
         return array
+    }
+    
+    static func niceName() -> [Movie] {
+        var arrayNewName = [Movie]()
+        for var i in streamMovieArray().enumerated() {
+            i.element.name = "Клип с Youtube номер \(i.offset + 1)"
+            arrayNewName.append(i.element)
+        }
+        return arrayNewName
     }
 }
