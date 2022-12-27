@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         checkRecordPermission()
     }
     
+//     Recorder
+    
     private func checkRecordPermission(){
         switch AVAudioSession.sharedInstance().recordPermission {
             case AVAudioSession.RecordPermission.granted:
