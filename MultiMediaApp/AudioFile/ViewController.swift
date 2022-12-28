@@ -158,7 +158,6 @@ class ViewController: UIViewController {
             view.backgroundColor = .systemOrange
         } else {
             player.currentTime = 0.0
-            print("Already stopped!")
         }
     }
     
